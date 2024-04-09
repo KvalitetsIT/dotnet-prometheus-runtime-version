@@ -7,13 +7,13 @@
         <RootNamespace>KvalitetsIT.Prometheus.NetRuntime</RootNamespace>
         <Version>0.0.3</Version>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
         <RepositoryUrl>https://github.com/KvalitetsIT/dotnet-prometheus-runtime-version</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="prometheus-net" Version="8.2.1" />
-        <None Include="../LICENSE" Pack="true" PackagePath="LICENSE"/>
+        <None Include="..\LICENSE.txt" Pack="true" PackagePath="LICENSE.txt"/>
         <None Include="../docs/README.md" Pack="true" PackagePath="README.md" />
     </ItemGroup>
 </Project>
