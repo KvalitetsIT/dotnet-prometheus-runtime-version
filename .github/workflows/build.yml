@@ -46,3 +46,10 @@ jobs:
       run: ./build/nuget.sh 
       env:
         NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+
+      # Create Release Notes
+    - name: Create Release Notes
+      uses: softprops/action-gh-release@v1
+      if: ${{ steps.tag.conclusion != 'skipped' }}
+      with:
+        generate_release_notes: true
